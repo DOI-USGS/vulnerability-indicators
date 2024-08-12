@@ -36,7 +36,7 @@
           <li class="follow">Follow</li>
           <li class="twitter">
             <a href="https://twitter.com/usgs_datasci" target="_blank" aria-label="twitter link">
-              <font-awesome-icon :icon="{ prefix: 'fab', iconName: 'twitter-square' } " class="fa fa-twitter-square"><span class="only">Twitter</span></font-awesome-icon>
+              <font-awesome-icon :icon="{ prefix: 'fab', iconName: 'square-x-twitter' } " class="fa fa-square-x-twitter"><span class="only">Twitter</span></font-awesome-icon>
             </a>
           </li>
           <li class="facebook">
@@ -78,6 +78,9 @@
 <style scoped lang="scss">
 /* USGS Viz ID default css in src/assets/common.css and src/assets/custom.csss */
 /* custom edit to style font-awesome icons like template <i> elements */
+footer p, text, li {
+  padding: 0;
+}
 .fa {
   color:#fff;
 	font-size: 24px;
@@ -85,5 +88,8 @@
 /* custom edit to get margins to match example */
 ul {
   margin-top: 15px;
+}
+ul.social {
+  margin-bottom: 1rem;
 }
 </style>
